@@ -1,71 +1,112 @@
-h1 a{ 
-    color: black; 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 42px; 
-    text-decoration: none;
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
 }
-.navegador{
+
+h1 a {
+    padding: 16px;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 42px;
+    text-decoration: none;
+    display: flex;
+    justify-content: right;
+}
+
+.navegador {
     color: black;
     text-decoration: none;
     font-size: 12px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     align-content: center;
 }
-.lista-nav{
+
+.lista-nav {
     list-style-type: none;
     text-decoration: none;
     text-transform: uppercase;
 }
-.titulo-destacados{
-    color: black;
-    font-size: 35px;
+
+@media (min-width: 320px) {
+    .titulo-destacados {
+        color: black;
+        font-size: 35px;
+        justify-content: center;
+    }
+    .grid-container {
+        padding: 16 px;
+        background-color: aqua;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 16px;
+    }
+
+    .art_uno {
+        .titulo-art {
+            color: red;
+            font-size: 30px;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .img-destacados {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 400px;
+        }   
+        .texto-destacados{
+            color: black;
+            font-size: 16px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: flex;
+        } 
+    }
+    .art_dos {
+        .titulo-art {
+            color: red;
+            font-size: 30px;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .img-destacados {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 400px;
+        }   
+        .texto-destacados{
+            color: black;
+            font-size: 16px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: flex;
+        } 
+    }
 }
-.img-destacados{
-    width: 400px;
-    height: 400px;
-}
-.texto-destacados{
-    color: black; 
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;  
-    width: 400px;
-}
-.titulo-seccion{
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 40px; 
-}
-.titulo-art{
-    color: black; 
-    font-size: 25px; 
-    width: 300px;
-}
-.img-art{
-    width: 300px;
-    height: 300px;
-}
-.texto-art{
-    width: 300px; 
-    font-family: 'Courier New', Courier, monospace; 
-    font-size: 15px
-}
-.boton{
-    color:red; 
+
+.boton {
+    color: red;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 20px;
 }
-.links{
+
+.links {
     font-style: oblique;
     font-weight: 900;
     text-decoration: none;
 }
-.formulario{
+
+.formulario {
     width: 350px;
 }
-.texto-footer{
-    font-size: 10px; 
+
+.texto-footer {
+    font-size: 10px;
     font-family: cursive;
     text-align: center;
 }
